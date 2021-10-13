@@ -98,7 +98,7 @@ namespace Library
                 var var = new ActionBlock<string>(async image =>
                 {
                     YoloV4Prediction predict;
-                    await Task.Delay(1000);
+                    //await Task.Delay(1000);
                    // Console.WriteLine(i + " ThreadId:" + Thread.CurrentThread.ManagedThreadId + " Execute Time:" + DateTime.Now);
                     lock (BufferLock)//lock 锁住，防止一个任务被多个进程抢
                     {
